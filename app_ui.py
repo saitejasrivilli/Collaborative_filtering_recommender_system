@@ -54,9 +54,9 @@ st.title("Product Recommendation System")
 
 # Suggested users
 suggested_users = random.sample(list(train_matrix.index), 5)
-user_options =  [
+user_options =   [
     f"{user_mapping[user_mapping['user_id'] == user]['user_name'].values[0]} (ID: {user})" for user in suggested_users
-]
+]+['Manual Input']
 
 # Sidebar for user selection
 st.sidebar.header("Suggested User IDs")
@@ -83,6 +83,8 @@ if selected_option != "Manual Input":
             # Update session state only if the selected user ID is different
             st.session_state["user_id"] = selected_user_id
             st.session_state["selected_user_id"] = selected_user_id
+           
+
     except IndexError:
         st.error("Invalid user selection format")
 else:
