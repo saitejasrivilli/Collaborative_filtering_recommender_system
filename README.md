@@ -7,3 +7,4 @@ A hybrid product recommendation system leveraging both user-based and item-based
 - **Interactive User Interface**: Built with Streamlit for dynamic interactions.
 - **Custom User and Product Mappings**: Provides user-friendly names for users and products.
 - **Deployed Online**: Access the live app at [Streamlit App](https://collaborativefilteringrecommendersystem.streamlit.app/).
+![Diagram](diagram.png)
